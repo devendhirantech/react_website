@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250" width="100%" height="100%">
+  <defs>
+    <!-- Glow effect filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <!-- Gradient for the letter D -->
+    <linearGradient id="dGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Logo Elements with Glow -->
+  <g filter="url(#glow)">
+    <!-- Left Angle Bracket -->
+    <path d="M 85 75 L 35 125 L 85 175" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Right Angle Bracket -->
+    <path d="M 215 75 L 265 125 L 215 175" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Thick Letter D -->
+    <path d="M 115 75 h 25 a 50 50 0 0 1 0 100 h -25 z" fill="none" stroke="url(#dGrad)" stroke-width="22" stroke-linejoin="round" />
+    
+    <!-- Center Dot inside D -->
+    <circle cx="140" cy="125" r="9" fill="#ffffff" />
+  </g>
+
+  <!-- Bottom Text -->
+  <text x="150" y="220" font-family="monospace, Courier New, sans-serif" font-size="18" fill="#ffffff" font-weight="bold" text-anchor="middle" filter="url(#glow)">&lt;Dev /&gt;</text>
+</svg>

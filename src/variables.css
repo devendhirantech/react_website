@@ -1,0 +1,8 @@
+/* src/variables.css */
+:root {
+  --brand-primary: #000;
+  --brand-black: #000;
+  --brand-white: #fff;
+    --text-color-midgray: #848484;
+    --brand-nav-pill-bg:  rgb(255 255 255 / 38%);
+}
