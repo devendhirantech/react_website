@@ -49,7 +49,7 @@ export default function ProductHeader() {
 	<motion.header id="home" className={` rounded-full sticky  left-0 right-0 bottom-0 z-50  ${ isScrolled ? "scrolledNav" : "nonScrolledNav" }`}>
 		<nav className="max-w-7xl mx-auto flex items-center justify-between  py-[16px] px-[30px]" >
 			<div className="product-header-logo cursor-pointer">
-			<img src="/src/assets/product-logo.svg" alt="Dev Logo" className=" h-10 w-auto" />
+			<img src="/assets/product-logo.svg" alt="Dev Logo" className=" h-10 w-auto" />
 			</div>
 			<div className="flex items-center gap-8">
 			<ul className="hidden md:flex items-center gap-1 p-0 list-none">
