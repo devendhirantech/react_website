@@ -30,22 +30,22 @@ export default function Footer() {
             <ul className="flex gap-4">
               <li>
                 <a href="#" aria-label="YouTube" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/src/assets/youtube.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  <img src="/assets/youtube.svg" alt="" aria-hidden="true" className="h-5 w-5" />
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="X" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/src/assets/x.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  <img src="/assets/x.svg" alt="" aria-hidden="true" className="h-5 w-5" />
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/src/assets/instagram.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  <img src="/assets/instagram.svg" alt="" aria-hidden="true" className="h-5 w-5" />
                 </a>
               </li>
               <li>
                 <a href="#" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/src/assets/facebook.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  <img src="/assets/facebook.svg" alt="" aria-hidden="true" className="h-5 w-5" />
                 </a>
               </li>
             </ul>

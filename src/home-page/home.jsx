@@ -87,7 +87,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div className="relative" initial={{ x: "50%", opacity: 0 }} transition={{ duration: 0.5 }}  whileInView={{ opacity: 1, x: "0%" }} viewport={{ once: true , amount: 0.5}}>
-          <img  src="/src/assets/portfolio-dashboard.png" alt="Profile" />
+          <img  src="/assets/portfolio-dashboard.png" alt="Profile" />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
         </motion.div>
       </div>
@@ -100,39 +100,39 @@ export default function Home() {
         <p className="text-center text-gray-300 ">Here are some of the technologies I work with:</p>
         <div className="max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-20 mt-12">
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/html.png" alt="HTML" className="w-[100px]" />
+            <img src="/assets/html.png" alt="HTML" className="w-[100px]" />
             <p className="font-serif  text-gray-300 text-center mt-4 text-shadow-lg group-hover:text-shadow-lg   group-hover:font-bold">HTML</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between " initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/css.png" alt="CSS" className="w-[100px]" />
+            <img src="/assets/css.png" alt="CSS" className="w-[100px]" />
             <p className="font-serif text-gray-300 text-center mt-4  group-hover:text-shadow-lg  group-hover:font-bold">CSS</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/javascript.png" alt="JavaScript" className="w-[100px] h-[100px]" />
+            <img src="/assets/javascript.png" alt="JavaScript" className="w-[100px] h-[100px]" />
             <p className="font-serif text-gray-300 text-center mt-4  group-hover:text-shadow-lg  group-hover:font-bold">JavaScript</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/react.png" alt="React" className="w-[100px] " />
+            <img src="/assets/react.png" alt="React" className="w-[100px] " />
             <p className="font-serif text-gray-300 text-center mt-4  group-hover:text-shadow-lg  group-hover:font-bold">React</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/ember.png" alt="Ember Js" className="w-[100px]" />
+            <img src="/assets/ember.png" alt="Ember Js" className="w-[100px]" />
             <p className="font-serif text-gray-300 text-center mt-4  group-hover:text-shadow-lg  group-hover:font-bold">Ember</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/bootstrap.png" alt="Bootstrap" className="w-[100px]" />
+            <img src="/assets/bootstrap.png" alt="Bootstrap" className="w-[100px]" />
             <p className="font-serif text-gray-300 text-center mt-4  group-hover:text-shadow-lg  group-hover:font-bold">Bootstrap</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between " initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/tailwindcss.svg" alt="Tailwind" className="w-[100px] mt-4" />
+            <img src="/assets/tailwindcss.svg" alt="Tailwind" className="w-[100px] mt-4" />
             <p className="font-serif text-gray-300 text-center mt-4 text-shadow-lg font-serif  group-hover:text-shadow-lg  group-hover:font-bold">Tailwind</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/motion.svg" alt="Motion" className="w-[100px] mt-8" />
+            <img src="/assets/motion.svg" alt="Motion" className="w-[100px] mt-8" />
             <p className="font-serif text-gray-300 text-center mt-4 text-shadow-lg group-hover:text-shadow-lg  group-hover:font-bold">Motion</p>
           </motion.div>
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
-            <img src="/src/assets/github.png" alt="GitHub" className="w-[100px]" />
+            <img src="/assets/github.png" alt="GitHub" className="w-[100px]" />
             <p className="font-serif text-gray-300 text-center mt-4 text-shadow-lg group-hover:text-shadow-lg  group-hover:font-bold">GitHub</p>
           </motion.div>
         </div>
@@ -146,8 +146,8 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4"> Experience </h2>
           <p className="w-[600px] m-auto text-center text-base mb-8 text-gray-400">I have experience working as a <span className="text-blue-400"> Web Developer </span> at  <span className="text-blue-400">Zoho</span>, a world-renowned software company. Below is a curated list of the products I have contributed to</p>
           <div className="flex flex-row gap-6 justify-center item-center mt-[60px]">
-            <a href="https://www.zoho.com/"><img src="/src/assets/zoho-logo.png" alt="Zoho" className="w-[100px] item-center" /></a>
-            <a href="https://www.vikra.com/en-in/seller/" className="flex item-center bg-white"><img src="/src/assets/vikra-color.svg" alt="" className="w-[160px] item-center"/></a>
+            <a href="https://www.zoho.com/"><img src="/assets/zoho-logo.png" alt="Zoho" className="w-[100px] item-center" /></a>
+            <a href="https://www.vikra.com/en-in/seller/" className="flex item-center bg-white"><img src="/assets/vikra-color.svg" alt="" className="w-[160px] item-center"/></a>
           </div>
         </div>
         
