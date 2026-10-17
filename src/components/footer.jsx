@@ -26,51 +26,60 @@ export default function Footer() {
               />
             )}
           </motion.h2>
-          <nav aria-label="Social media">
-            <ul className="flex gap-4">
-              <li>
-                <a href="#" aria-label="YouTube" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/assets/youtube.svg" alt="" aria-hidden="true" className="h-5 w-5" />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="X" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/assets/x.svg" alt="" aria-hidden="true" className="h-5 w-5" />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/assets/instagram.svg" alt="" aria-hidden="true" className="h-5 w-5" />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
-                  <img src="/assets/facebook.svg" alt="" aria-hidden="true" className="h-5 w-5" />
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
 
         <div className="flex flex-1 flex-wrap gap-x-10 gap-y-12">
           <div className="w-full sm:w-[calc(50%-1.25rem)]">
-            <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">LOCATIONS</h3>
-            <p className="mt-4 text-lg leading-relaxed text-[#f2f2ed]">Chennai, India</p>
+            <div className="flex flex-col gap-4">
+              <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">LOCATIONS</h3>
+              <p className="mt-4 text-lg leading-relaxed text-[#f2f2ed]">Chennai, India</p>
+            </div>
+            <div className="w-full mt-6 flex flex-col gap-4">
+              <h3 className="text-xs font-semibold text-gray-500">AVAILABLE TIME</h3>
+              <p className="text-lg leading-relaxed text-[#f2f2ed]">24/7 Mon-Sun</p>
+            </div>
           </div>
           <div className="w-full sm:w-[calc(50%-1.25rem)]">
             <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">CONTACT ME</h3>
-            <a href="mailto:projectexpo@gmail.com" className="mt-4 inline-block break-all text-lg text-[#f2f2ed] hover:text-white">
-              projectexpo@gmail.com
-            </a>
+            <div className="mt-4 flex flex-col items-start gap-2">
+              <a href="mailto:projectexpo@gmail.com" className="break-all text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4">
+                projectexpo@gmail.com
+              </a>
+              <a href="https://acesse.one/20b7brh" target="_blank" rel="noreferrer" className="text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4">
+                WhatsApp
+              </a>
+            </div>
+            <nav aria-label="Social media" className="mt-6">
+              <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500 mb-4 ">FOLLOW ME</h3>
+              <ul className="flex gap-4">
+                <li>
+                  <a href="#" aria-label="YouTube" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
+                    <img src="/assets/youtube.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="X" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
+                    <img src="/assets/x.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
+                    <img src="/assets/instagram.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-[#f2f2ed] transition-colors hover:border-white/60 hover:bg-white/10">
+                    <img src="/assets/facebook.svg" alt="" aria-hidden="true" className="h-5 w-5" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div className="w-full sm:w-[calc(50%-1.25rem)]">
-            <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">AVAILABLE TIME</h3>
-            <p className="mt-4 text-lg leading-relaxed text-[#f2f2ed]">Mon–Fri, 9:00 AM–6:00 PM</p>
-          </div>
+          
         </div>
       </div>
       <div className="mx-auto mt-16 max-w-7xl border-t border-white/10 pt-6 text-sm text-gray-500 text-center">
-        © {new Date().getFullYear()} Devendhiran. All rights reserved.
+        © {new Date().getFullYear()} .All rights reserved.
       </div>
     </footer>
   );
