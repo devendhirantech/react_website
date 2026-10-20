@@ -1,27 +1,32 @@
 [
   {
-    "year": "2018",
-    "description": "An early chapter filled with new experiences, curiosity, and the first memories that shaped my journey.",
+    "year": "March 2019",
+    "title": "The Zoho Schools Journey",
+    "description": "Completed my 12th-grade education at the Government School in Aladi. Officially joined Zoho Schools on May 15, 2019. I chose the Client Web Developer track over traditional college education and completed an intensive 11-month internship, building a strong foundation in frontend technologies.",
     "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    "year": "2020",
-    "description": "A time to slow down, appreciate the people around me, and find inspiration in everyday life.",
+    "year": "March 2020",
+    "title": "Remote Work & Zoho Finance",
+    "description": "Transitioned to remote work during the COVID-19 pandemic. I got the incredible opportunity to join the Zoho Finance team as a Frontend Engineer, where I started working on the web application codebase for Zoho Books.",
     "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
   },
   {
     "year": "2022",
-    "description": "A memorable season of learning, exploring new interests, and building confidence one step at a time.",
+    "title": "Return to Office & Skill Expansion",
+    "description": "Transitioned back to working from the office. Deepened my expertise in modern web development, mastering tools like HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS.",
     "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    "year": "2024",
-    "description": "A milestone year with meaningful experiences, new perspectives, and moments worth looking back on.",
+    "year": "2025",
+    "title": "Building from Scratch",
+    "description": "Developed the web landing page for vikkra.com, an Indian ONDC online selling platform. In the same year, I architected and built the initial website codebase for a major new Zoho Finance product: Zoho Practice",
     "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
   },
   {
-    "year": "2025",
-    "description": "A fresh chapter and a chance to reflect on how far the journey has come while looking ahead to what is next.",
+    "year": "Present",
+    "title": "Taking Full Ownership",
+    "description": "Currently serving as the primary frontend engineer and maintainer for the Zoho Practice website. I take full responsibility for the product's website changes, UI component development, localized page routing (like the UK edition), and Drupal CMS migrations",
     "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=80"
   }
 ]

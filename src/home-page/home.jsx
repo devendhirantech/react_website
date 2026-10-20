@@ -3,7 +3,6 @@ import Footer from "../components/footer";
 import { useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion , useScroll, useTransform } from "framer-motion";
-import { WorkExperience } from "../components/data/work-experience";
 import timelineEntries from "../components/data/timeline.json";
 
 export default function Home() {
@@ -18,10 +17,10 @@ export default function Home() {
     <ProductHeader  />
 
     { /*tech-skill && */}
-    <section id="about" className="relative flex scroll-mt-24 items-center pt-[100px] pb-[80px] px-6 h-[100vh]">
+    <section id="about" className="relative flex min-h-screen h-auto scroll-mt-24 items-center px-6 pt-20 pb-16 md:h-screen md:pt-[80px] md:pb-[80px]">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <motion.div className="flex flex-col items-start z-10" initial={{ x: "-50%", opacity: 0 }}  transition={{ duration: 0.5 }}  whileInView={{ opacity: 1, x: "0%" }} viewport={{ once: true, amount: 0.5 }}>
-          <motion.div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 shadow-sm" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 3 }}>
+        <motion.div className="z-10 mb-16 flex flex-col items-start md:mb-0" initial={{ x: "-50%", opacity: 0 }}  transition={{ duration: 0.5 }}  whileInView={{ opacity: 1, x: "0%" }} viewport={{ once: true, amount: 0.5 }}>
+          <motion.div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 shadow-sm md:mt-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 3 }}>
             <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
@@ -94,7 +93,7 @@ export default function Home() {
     </section>
 
     { /*tech-skill && */}
-    <section id="tech-stack" className="scroll-mt-24 px-6 py-20 h-[100vh]">
+    <section id="tech-stack" className="scroll-mt-20 px-6 py-20">
       <div className="max-w-7xl mx-auto ">
         <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4 ">Tech Stack</h2>
         <p className="text-center text-gray-300 ">Here are some of the technologies I work with:</p>
@@ -140,50 +139,19 @@ export default function Home() {
     </section>
 
     {/* Project and Experience Section */}
-    <section id="experience" ref={containerRef} className="scroll-mt-24 h-[200vh]"> 
-      <div className="sticky top-[50px] h-screen pt-[100px] pb-[80px] flex flex-col justify-center overflow-hidden"> 
-        <div className="container max-w-5xl mx-auto mb-[60px] px-6"> 
+    <section id="experience" ref={containerRef} className="scroll-mt-24 px-6 py-16 md:px-0 md:py-0">
+      <div className="flex flex-col justify-center md:pt-[100px] md:pb-[80px]">
+        <div className="container mx-auto mb-10 max-w-5xl md:mb-[60px] md:px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4"> Experience </h2>
-          <p className="w-[600px] m-auto text-center text-base mb-8 text-gray-400">I have experience working as a <span className="text-blue-400"> Web Developer </span> at  <span className="text-blue-400">Zoho</span>, a world-renowned software company. Below is a curated list of the products I have contributed to</p>
-          <div className="flex flex-row gap-6 justify-center item-center mt-[60px]">
-            <a href="https://www.zoho.com/"><img src="/assets/zoho-logo.png" alt="Zoho" className="w-[100px] item-center" /></a>
-            <a href="https://www.vikra.com/en-in/seller/" className="flex item-center bg-white"><img src="/assets/vikra-color.svg" alt="" className="w-[160px] item-center"/></a>
+          <p className="mx-auto mb-8 w-full max-w-[600px] text-center text-base text-gray-400">I have experience working as a <span className="text-blue-400"> Web Developer </span> at  <span className="text-blue-400">Zoho</span>, a world-renowned software company. Below is a curated list of the products I have contributed to</p>
+          <div className="mt-8 flex flex-row items-center justify-center gap-6 md:mt-[60px]">
+            <motion.a href="https://www.zoho.com/" whileInView={{ scale: [1, 1.1, 1] }} viewport={{ once: false, amount: 0.5 }}>
+              <img src="/assets/zoho-logo.png" alt="Zoho" className="w-[100px] item-center" />
+            </motion.a>
+            <motion.a href="https://www.vikra.com/en-in/seller/" whileInView={{ scale: [1, 1.1, 1] }} viewport={{ once: false, amount: 0.5 }} className="flex item-center bg-white">
+              <img src="/assets/vikra-color.svg" alt="" className="w-[160px] item-center"/>
+            </motion.a>
           </div>
-        </div>
-        
-        <div className="w-full">
-          <motion.div 
-            style={{ x: horizontalScroll }} 
-            className="flex gap-12 items-stretch relative pr-[100vw] pl-[30vw] w-max"
-          >
-            {WorkExperience.map((itemParent, index) => (
-              <div key={index} className="flex flex-col shrink-0">
-                <div className="flex gap-6 h-full items-stretch ">
-                  {itemParent.details.map((detail, detailIndex) => (
-                    <motion.div 
-                      key={detailIndex} 
-                      className="flex flex-col p-10 border border-white/20 rounded-lg shadow-lg w-[400px] shrink-0 bg-white/5 hover:bg-[var(--bg-color)] backdrop-blur-sm origin-center transition-colors duration-200" style={{ "--bg-color": detail.productColor }}
-                      initial={{ scale: 0.85, opacity: 0.4 }}
-                      whileInView={{ scale: 1, opacity: 1 }}
-                      viewport={{ once: false, amount: "some", margin: "0px -35% 0px -25%" }}
-                      transition={{ duration: 0.5, ease: "easeOut" }}
-                      
-                    >
-                      {detail.refImg && (
-                        <img  
-                          src={detail.refImg} 
-                          alt={detail.title} 
-                          className="mt-auto w-[200px]  object-cover rounded-md mb-6 inline-block"
-                        />
-                      )}
-                      <p className="text-gray-300 text-lg my-4 flex-grow leading-relaxed">{detail.description}</p>
-                      <a href={detail.link} className="inline-flex w-fit text-white mt-4 border-b-2 border-transparent hover:border-white hover:cursor-pointer transition-colors duration-200"> {detail.title} Website </a>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </div>
     </section>

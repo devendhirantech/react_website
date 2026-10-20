@@ -42,12 +42,26 @@ export default function Footer() {
           <div className="w-full sm:w-[calc(50%-1.25rem)]">
             <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">CONTACT ME</h3>
             <div className="mt-4 flex flex-col items-start gap-2">
-              <a href="mailto:projectexpo@gmail.com" className="break-all text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4">
+              <motion.a
+                href="mailto:projectexpo@gmail.com"
+                className="break-all text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4"
+                whileInView={{ opacity: [1, 0.4, 1], scale: [1, 1.05, 1] }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ repeat: 4, duration: 0.35 }}
+              >
                 projectexpo@gmail.com
-              </a>
-              <a href="https://acesse.one/20b7brh" target="_blank" rel="noreferrer" className="text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4">
+              </motion.a>
+              <motion.a
+                href="https://acesse.one/20b7brh"
+                target="_blank"
+                rel="noreferrer"
+                className="text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4"
+                whileInView={{ opacity: [1, 0.4, 1], scale: [1, 1.05, 1] }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ repeat: 4, duration: 0.5 }}
+              >
                 WhatsApp
-              </a>
+              </motion.a>
             </div>
             <nav aria-label="Social media" className="mt-6">
               <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500 mb-4 ">FOLLOW ME</h3>
