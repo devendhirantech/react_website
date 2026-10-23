@@ -34,7 +34,7 @@ export default function Home() {
               animate={{ opacity: 1 }} 
               transition={{ duration: 0.5, delay: 0, ease: "linear" }}
               >
-                Vanakkam..!
+                Vanakkam!
             </motion.span>
             <br />
             <motion.span className="inline-block"
@@ -63,7 +63,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.5, delay: 1.5, ease: "linear" }}
           >
-         Transforming complex ideas into seamless digital experiences. As a Frontend Engineer, I focus on responsive layouts, clean code, and creating visually engaging web applications.
+            I build fast, interactive, and scalable web applications. 
+            From personal portfolios to highly professional corporate websites, 
+            let's bring your vision to life
           </motion.p>
           <motion.div 
             className="mt-10"
@@ -96,8 +98,11 @@ export default function Home() {
     <section id="tech-stack" className="scroll-mt-20 px-6 py-20">
       <div className="max-w-7xl mx-auto ">
         <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4 ">Tech Stack</h2>
-        <p className="text-center text-gray-300 ">Here are some of the technologies I work with:</p>
-        <div className="max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-20 mt-12">
+        <p className="text-center text-gray-300 max-w-[600px] text-base mx-auto leading-relaxed hover:text-white transition-colors">
+          Transforming complex ideas into seamless digital experiences. As a Frontend Engineer, 
+          I focus on responsive layouts, clean code, and creating visually engaging web applications. 
+          Here are some of the technologies I work with:</p>
+        <div className="max-w-2xl mx-auto flex flex-wrap justify-center items-center gap-20 mt-[60px]">
           <motion.div className="group flex flex-col min-h-[150px] justify-between" initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} whileHover={{ scale: 1.15 }} transition={{ delay: 0.1, duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}  viewport={{ once: false , amount: 0.5 }}>
             <img src="/assets/html.png" alt="HTML" className="w-[100px]" />
             <p className="font-serif  text-gray-300 text-center mt-4 text-shadow-lg group-hover:text-shadow-lg   group-hover:font-bold">HTML</p>
@@ -157,10 +162,10 @@ export default function Home() {
     </section>
 
     {/* Timeline Section */}
-    <section id="timeline" className="scroll-mt-24 px-6 py-20">
+    <section id="services" className="scroll-mt-24 px-6 py-20">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4">Timeline</h2>
-        <p className="text-center text-gray-400 mb-12">A few moments from the journey so far</p>
+        <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4">End-to-End Web Solutions</h2>
+        <p className="text-center text-gray-400 mb-12 max-w-[600px] mx-auto" >I take care of the entire technical heavy lifting. From setting up your business email and domain to designing, building, and deploying your website—leaving you free to focus on your business.</p>
         <div className="flex flex-col gap-[60px]">
           {timelineEntries.map((entry , index) => (
             <div
@@ -177,7 +182,7 @@ export default function Home() {
                 }`}
                 >{entry.year}</p>
                 <motion.article
-                  className={`h-full min-h-[320px] min-w-0 overflow-hidden rounded-2xl md:grid md:grid-cols-2 ${
+                  className={`h-full min-h-[320px] min-w-0 overflow-hidden rounded-2xl md:grid md:grid-cols-2 items-center p-6 md:p-10 gap-6 ${
                     index % 2 === 0 ? "ml-auto" : "mr-auto"
                   }`}
                   style={{
@@ -191,13 +196,13 @@ export default function Home() {
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                  <div className={`flex flex-col justify-center p-6 md:p-10 ${index % 2 === 0 ? "md:order-2" : ""}`}>
-                    <p className="mt-4 leading-relaxed text-gray-300">{entry.description}</p>
-                  </div>
-                  <img
+                  <div className={`flex flex-col justify-center ${index % 2 === 0 ? "md:order-2" : ""}`}>
+                    <p className="leading-relaxed text-gray-300 leading[1.5]">{entry.description}</p>
+                  </div>  
+                  <img 
                     src={entry.image}
                     alt={`Memory from ${entry.year}`}
-                    className={`h-64 w-full object-cover md:h-full md:min-h-[280px] ${index % 2 === 0 ? "md:order-1" : ""}`}
+                    className={`sm:mt-0 mt-8 object-cover ${index % 2 === 0 ? "md:order-1" : ""}`}
                     loading="lazy"
                   />
                 </motion.article>

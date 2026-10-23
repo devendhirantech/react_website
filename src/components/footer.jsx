@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="w-full sm:w-[calc(50%-1.25rem)]">
             <div className="flex flex-col gap-4">
               <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">LOCATIONS</h3>
-              <p className="mt-4 text-lg leading-relaxed text-[#f2f2ed]">Chennai, India</p>
+              <p className="text-lg leading-relaxed text-[#f2f2ed]">Chennai, India</p>
             </div>
             <div className="w-full mt-6 flex flex-col gap-4">
               <h3 className="text-xs font-semibold text-gray-500">AVAILABLE TIME</h3>
@@ -43,13 +43,13 @@ export default function Footer() {
             <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">CONTACT ME</h3>
             <div className="mt-4 flex flex-col items-start gap-2">
               <motion.a
-                href="mailto:projectexpo@gmail.com"
+                href="mailto:devendhiran.techorg.com"
                 className="break-all text-lg text-[#f2f2ed] hover:text-white hover:underline underline-offset-4"
                 whileInView={{ opacity: [1, 0.4, 1], scale: [1, 1.05, 1] }}
                 viewport={{ once: false, amount: 0.5 }}
                 transition={{ repeat: 4, duration: 0.35 }}
               >
-                projectexpo@gmail.com
+              devendhiran.techorg.com
               </motion.a>
               <motion.a
                 href="https://acesse.one/20b7brh"

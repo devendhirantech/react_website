@@ -1,32 +1,26 @@
 [
   {
-    "year": "March 2019",
-    "title": "The Zoho Schools Journey",
-    "description": "Completed my 12th-grade education at the Government School in Aladi. Officially joined Zoho Schools on May 15, 2019. I chose the Client Web Developer track over traditional college education and completed an intensive 11-month internship, building a strong foundation in frontend technologies.",
-    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+    "year": "Setup & Brand Identity",
+    "title": "Setup & Brand Identity",
+    "description": "The journey begins here. I'll help you acquire the perfect domain name, set up secure professional business emails (e.g., mail@yourcompany.com), and gather all essential requirements to define a solid technical strategy for your brand",
+    "image": "/assets/create-mail.png"
   },
   {
-    "year": "March 2020",
-    "title": "Remote Work & Zoho Finance",
-    "description": "Transitioned to remote work during the COVID-19 pandemic. I got the incredible opportunity to join the Zoho Finance team as a Frontend Engineer, where I started working on the web application codebase for Zoho Books.",
-    "image": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+    "year": "UI/UX Design & Collaborative Approval",
+    "title": "UI/UX Design & Collaborative Approval",
+    "description": "Transforming ideas into visual layouts using Figma. I create customized UI/UX wireframes and mockups. We refine the design collaboratively, and the development starts only after you are 100% satisfied and give the green light.",
+    "image": "/assets/design-approval.png"
   },
   {
-    "year": "2022",
-    "title": "Return to Office & Skill Expansion",
-    "description": "Transitioned back to working from the office. Deepened my expertise in modern web development, mastering tools like HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS.",
-    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+    "year": "Core Frontend Engineering & Development",
+    "title": "Core Frontend Engineering & Development",
+    "description": "Breathing life into approved designs. I write clean, highly optimized, and fully responsive code to ensure smooth animations, lightning-fast loading speeds, and a stellar user experience.",
+    "image": "/assets/development.png"
   },
   {
-    "year": "2025",
-    "title": "Building from Scratch",
-    "description": "Developed the web landing page for vikkra.com, an Indian ONDC online selling platform. In the same year, I architected and built the initial website codebase for a major new Zoho Finance product: Zoho Practice",
-    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    "year": "Present",
-    "title": "Taking Full Ownership",
-    "description": "Currently serving as the primary frontend engineer and maintainer for the Zoho Practice website. I take full responsibility for the product's website changes, UI component development, localized page routing (like the UK edition), and Drupal CMS migrations",
-    "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1200&q=80"
+    "year": "Secure Deployment & Launch",
+    "title": "Secure Deployment & Launch",
+    "description": "Taking your business live to the world. I configure custom domains, deploy your website on high-performance lightning-fast servers, ensure top-tier security with SSL certificates, and hand over a fully functional, production-ready digital platform.",
+    "image": "/assets/live-hosting.png"
   }
 ]

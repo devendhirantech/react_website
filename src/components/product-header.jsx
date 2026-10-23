@@ -5,7 +5,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Tech Stack", href: "#tech-stack" },
   { label: "Experience", href: "#experience" },
-  { label: "Timeline", href: "#timeline" },
+  { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];
 import "./product-header.css";
@@ -47,9 +47,9 @@ export default function ProductHeader() {
   return (
 	<>
 	<motion.header id="home" className={` rounded-full sticky  left-0 right-0 bottom-0 z-50  ${ isScrolled ? "scrolledNav" : "nonScrolledNav" }`}>
-		<nav className="max-w-7xl mx-auto flex items-center justify-between  py-[16px] px-[30px]" >
+		<nav className="max-w-7xl mx-auto flex items-center justify-between  py-[20px] px-[30px]" >
 			<div className="product-header-logo cursor-pointer">
-			<img src="/assets/product-logo.svg" alt="Dev Logo" className=" h-10 w-auto" />
+			<img src="/assets/product-logo.svg" alt="Dev Logo" className="w-[60px]" />
 			</div>
 			<div className="flex items-center gap-8">
 			<ul className="hidden md:flex items-center gap-1 p-0 list-none">
@@ -70,12 +70,6 @@ export default function ProductHeader() {
 				</motion.li>
 				))}
 			</ul>
-			<Button  
-			   className="flex items-center gap-2 bg-[var(--brand-white)] text-black px-5 py-2.5 rounded-full transition-colors text-sm font-medium" 
-			   primary={true} onClick={() => {}} animate={{ scale: 1 }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}
-			>
-			Resume
-			 </Button>
 			</div>
 		</nav>
 		</motion.header>
