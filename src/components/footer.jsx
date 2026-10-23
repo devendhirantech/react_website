@@ -4,7 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Footer() {
   const [shouldTypeHeading, setShouldTypeHeading] = useState(false);
-
   return (
     <footer id="contact" className="px-6 py-20 md:py-28 border-t border-white/10">
       <div className="mx-auto flex max-w-7xl flex-col gap-16 lg:flex-row lg:gap-24">
@@ -32,7 +31,7 @@ export default function Footer() {
           <div className="w-full sm:w-[calc(50%-1.25rem)]">
             <div className="flex flex-col gap-4">
               <h3 className="text-xs font-semibold tracking-[0.2em] text-gray-500">LOCATIONS</h3>
-              <p className="text-lg leading-relaxed text-[#f2f2ed]">Chennai, India</p>
+              <p className="text-lg leading-relaxed text-[#f2f2ed]">Chennai, India.</p>
             </div>
             <div className="w-full mt-6 flex flex-col gap-4">
               <h3 className="text-xs font-semibold text-gray-500">AVAILABLE TIME</h3>

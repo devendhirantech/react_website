@@ -1,21 +1,13 @@
 import ProductHeader from "../components/product-header";
 import Footer from "../components/footer";
-import { useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { motion , useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import timelineEntries from "../components/data/timeline.json";
 
 export default function Home() {
-  const containerRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef
-  });
-  const horizontalScroll = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
   return (
     <>
     <ProductHeader  />
-
     { /*tech-skill && */}
     <section id="about" className="relative flex min-h-screen h-auto scroll-mt-24 items-center px-6 pt-20 pb-16 md:h-screen md:pt-[80px] md:pb-[80px]">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -144,7 +136,7 @@ export default function Home() {
     </section>
 
     {/* Project and Experience Section */}
-    <section id="experience" ref={containerRef} className="scroll-mt-24 px-6 py-16 md:px-0 md:py-0">
+    <section id="experience" className="scroll-mt-24 px-6 py-16 md:px-0 md:py-0">
       <div className="flex flex-col justify-center md:pt-[100px] md:pb-[80px]">
         <div className="container mx-auto mb-10 max-w-5xl md:mb-[60px] md:px-6">
           <h2 className="text-3xl md:text-5xl font-bold text-white text-center [text-shadow:-1px_5px_4px_rgba(255,255,255,0.5)]  mb-4"> Experience </h2>
