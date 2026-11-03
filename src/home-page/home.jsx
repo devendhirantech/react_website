@@ -80,7 +80,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div className="relative" initial={{ x: "50%", opacity: 0 }} transition={{ duration: 0.5 }}  whileInView={{ opacity: 1, x: "0%" }} viewport={{ once: true , amount: 0.5}}>
-          <img  src="/assets/portfolio-dashboard.png" alt="Profile" />
+          <img  src="/assets/portfolio-dashboard.png" alt="Profile" fetchpriority="high" />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10"></div>
         </motion.div>
       </div>
